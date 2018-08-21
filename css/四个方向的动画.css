@@ -1,0 +1,108 @@
+/*定义四个方向的动画*/
+.app-page-moveFromTop{
+    animation:moveFromTop 0.6s linear both;
+}
+.app-page-moveToTop{
+    animation: moveToTop 0.6s linear both;
+}
+.app-page-moveFromBottom{
+    animation: moveFromBottom 0.6s linear both;
+}
+.app-page-moveToBottom{
+    animation:moveToBottom 0.6s linear both;
+}
+.app-page-moveFormLeft{
+    animation: moveFormLeft 0.6s linear both;
+}
+.app-page-moveToLeft{
+    animation: moveToLeft 0.6s linear both;
+}
+.app-page-moveFormRight{
+    animation: moveFormRight 0.6s linear both;
+}
+.app-page-moveToRight{
+    animation:moveToRight 0.6s linear both;
+}
+/*实现动画*/
+@keyframes moveFromTop {
+    from  {transform: translateY(-100%)}
+    to {}
+}
+@keyframes moveToTop {
+    from {}
+    to {transform: translateY(-100%)}
+}
+
+@keyframes moveFromBottom {
+    from {transform: translateY(100%)}
+    to {}
+}
+@keyframes moveToBottom {
+    from {}
+    to {transform: translateY(100%)}
+}
+
+@keyframes moveFromLeft {
+    from {transform: translateX(-100%)}
+    to {}
+}
+@keyframes moveToLeft {
+    from {}
+    to {transform: translateX(-100%)}
+}
+
+@keyframes moveFromRight {
+    from {transform: translateX(100%)}
+    to {}
+}
+@keyframes moveToRight {
+    from {}
+    to {transform: translateX(100%)}
+}
+
+/*小图标动画*/
+.app-page-moveIconUp{ animation:moveIconUp 1s linear both infinite }
+@keyframes moveIconUp {
+    0% {transform:translateY(100%); opacity: 0.2}
+    50% {transform: translateY(0%); opacity: 1}
+    100% {transform: translateY(-100%); opacity: 0.2}
+}
+/*圆球动画*/
+.app-page-moveCircle{animation: moveCircle 1.5s linear both}
+@keyframes moveCircle {
+    0% {transform: translateY(-80%);opacity: 0.2}
+    20% {transform: translateY(20%);opacity: 0.4}
+    50% {transform: translateY(-30%);opacity: 0.6}
+    70% {transform: translateY(10%);opacity: 0.8}
+    100% {transform: translateY(0%);opacity: 1}
+}
+/*缩放动画*/
+.app-page-scaleUp{animation: scaleUp 0.6s linear both;}
+@keyframes scaleUp {
+    0% {transform: scale(0.3)}
+    100% {transform: scale(1)}
+}
+/*反转动画*/
+.app-page-flipInLeft{
+    animation: flipInLeft 0.6s linear both;
+}
+@keyframes flipInLeft {
+    from {transform: rotateY(90deg)}
+    to {transform: rotateY(0deg)}
+}
+/*最后一屏动画*/
+.app-page-rotateToBottom {
+    animation: rotateToBottom 0.6s linear both;
+}
+@keyframes rotateToBottom{
+    from {transform: translateY(-50%) rotateX(90deg)}
+    to {transform: translateY(0%) rotateX(0deg)}
+}
+
+.app-page-rotateToTop{
+    animation: rotateToTop 0.6s linear both;
+}
+@keyframes rotateToTop {
+    from {transform: translateY(50%) rotateX(50deg)}
+    to {}
+}
